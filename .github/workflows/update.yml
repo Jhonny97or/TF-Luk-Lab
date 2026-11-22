@@ -1,0 +1,31 @@
+name: Actualizar TF-Luk Lab (Massive)
+on:
+  workflow_dispatch:
+  schedule:
+    # 23:35 UTC: after regular US close in both DST regimes.
+    - cron: '35 23 * * 1-5'
+permissions:
+  contents: write
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Descargar y calcular datos
+        env:
+          MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}
+        run: |
+          python engine/luk_engine.py --max-symbols 30 --start 2026-01-01 --delay 1
+      - name: Publicar solo si cambió el reporte
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/report.json
+          git diff --cached --quiet || (git commit -m "Actualizar datos de TF-Luk Lab" && git push)

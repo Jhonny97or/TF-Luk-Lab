@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1018"><meta name="description" content="TF-LUK LAB: investigación de momentum, sectores, EMA y backtests de hipótesis de Martin Luk.">
+<title>TF-LUK LAB | Sector Momentum Intelligence</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1018'/%3E%3Cpath d='M12 44 L23 33 L31 38 L44 18 L54 25' fill='none' stroke='%232dd9b6' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="brand-mark"><span class="brand-wave">⌁</span></div><div><div class="brand-title">TF-LUK<span>LAB</span></div><div class="brand-caption">MARKET INTELLIGENCE</div></div></div>
+ <div class="nav-heading">PLATAFORMA</div>
+ <nav id="nav">
+  <button class="nav-link active" data-tab="overview"><span>◫</span> Vista general</button>
+  <button class="nav-link" data-tab="sectors"><span>◈</span> Ranking de sectores</button>
+  <button class="nav-link" data-tab="scanner"><span>⌕</span> Scanner de acciones</button>
+  <button class="nav-link" data-tab="backtest"><span>▤</span> Laboratorio de backtest</button>
+  <button class="nav-link" data-tab="playbook"><span>▧</span> Método Martin Luk</button>
+  <button class="nav-link" data-tab="risk"><span>◎</span> Gestión de riesgo</button>
+ </nav>
+ <div class="sidebar-bottom"><div class="status-line"><span class="status-dot"></span><span id="connection-label">Cargando datos...</span></div><p>Señales de investigación · Sin ejecución de órdenes</p><div class="version">v1.0 · EOD ENGINE</div></div>
+</aside>
+<div class="main-wrap">
+<header class="topbar"><div class="topbar-left"><button id="menu-toggle" class="iconbtn mobile-only" aria-label="Menú">☰</button><span class="breadcrumb">WORKSPACE</span><span class="breadcrumb-separator">/</span><strong id="current-page">Vista general</strong></div><div class="topbar-actions"><span class="data-tag" id="data-tag">DATA MODE</span><span class="top-date" id="top-date">—</span><button id="refresh-btn" class="iconbtn" title="Recargar reporte" aria-label="Actualizar">↻</button></div></header>
+<main class="main-content">
+<div id="demo-alert" class="demo-alert hidden"></div>
+<div id="dashboard-content"></div>
+</main>
+<footer class="footer">TF-LUK LAB · Investigación educativa independiente · No afiliado con Martin Luk · Las señales no son recomendaciones ni órdenes reales.</footer>
+</div></div>
+<script src="app.js" defer></script>
+</body></html>

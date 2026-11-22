@@ -1,0 +1,44 @@
+ticker,sector
+NVDA,Semiconductores
+AMD,Semiconductores
+MU,Semiconductores
+SNDK,Semiconductores
+INTC,Semiconductores
+AVGO,Semiconductores
+MRVL,Semiconductores
+TSM,Semiconductores
+GLW,IA e infraestructura
+APLD,IA e infraestructura
+VRT,IA e infraestructura
+NBIS,IA e infraestructura
+CRWV,IA e infraestructura
+IREN,IA e infraestructura
+ORCL,Software y ciberseguridad
+CRWD,Software y ciberseguridad
+NET,Software y ciberseguridad
+OKTA,Software y ciberseguridad
+CRM,Software y ciberseguridad
+RDDT,Software y ciberseguridad
+PATH,Software y ciberseguridad
+RBLX,Software y ciberseguridad
+RGTI,Cuántica
+QBTS,Cuántica
+IONQ,Cuántica
+HOOD,Fintech
+SOFI,Fintech
+XYZ,Fintech
+COIN,Cripto
+MSTR,Cripto
+MARA,Cripto
+RIOT,Cripto
+FSLR,Energía y solar
+SEDG,Energía y solar
+SMR,Energía y solar
+OKLO,Energía y solar
+TSLA,Consumo y tecnología
+HIMS,Consumo y tecnología
+PLTR,IA e infraestructura
+BE,Energía y solar
+CVNA,Consumo y tecnología
+CELH,Consumo y tecnología
+XBI,Biotecnología
